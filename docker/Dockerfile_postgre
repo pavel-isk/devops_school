@@ -1,0 +1,4 @@
+FROM postgres:13-alpine
+ENV POSTGRES_USER=django
+ENV POSTGRES_PASSWORD=django
+ENV POSTGRES_DB=django
