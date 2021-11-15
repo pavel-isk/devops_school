@@ -1,0 +1,2 @@
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+nginx   2/2     2            2           5m5s

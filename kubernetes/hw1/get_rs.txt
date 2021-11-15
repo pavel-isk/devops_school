@@ -1,0 +1,2 @@
+NAME               DESIRED   CURRENT   READY   AGE
+nginx-5d59d67564   2         2         2       4m45s

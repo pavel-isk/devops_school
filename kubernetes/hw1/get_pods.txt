@@ -1,0 +1,4 @@
+NAME                     READY   STATUS    RESTARTS   AGE     IP           NODE       NOMINATED NODE   READINESS GATES
+nginx-5d59d67564-crvhf   1/1     Running   0          4m36s   172.17.0.8   minikube   <none>           <none>
+nginx-5d59d67564-dpvqc   1/1     Running   0          4m36s   172.17.0.7   minikube   <none>           <none>
+web                      1/1     Running   0          22m     172.17.0.6   minikube   <none>           <none>
