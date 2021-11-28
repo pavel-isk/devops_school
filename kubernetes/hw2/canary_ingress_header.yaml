@@ -1,0 +1,19 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: tssic-canary
+  annotations:
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-by-header: canary
+spec:
+  tls:
+    - secretName: selfsigned
+      hosts:
+        - localhost
+        - 127.0.0.1
+  defaultBackend:
+    service:
+      name: tssic-canary
+      port:
+        number: 80

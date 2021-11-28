@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: tssic
+    env: production
+  name: tssic-prod
+spec:
+  ports:
+  - port: 5000
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: tssic
+    env: production
+  type: ClusterIP
+status:
+  loadBalancer: {}

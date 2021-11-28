@@ -1,0 +1,16 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: tssic-prod
+spec:
+  tls:
+    - secretName: selfsigned
+      hosts:
+        - localhost
+        - 127.0.0.1
+  defaultBackend:
+    service:
+      name: tssic-prod
+      port:
+        number: 5000
