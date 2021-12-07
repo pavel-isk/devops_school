@@ -6,12 +6,13 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/canary: "true"
     nginx.ingress.kubernetes.io/canary-by-header: canary
+    nginx.ingress.kubernetes.io/canary-weight: "20"
 spec:
-  tls:
-    - secretName: selfsigned
-      hosts:
-        - localhost
-        - 127.0.0.1
+        #  tls:
+        #    - secretName: selfsigned
+        #      hosts:
+        #        - localhost
+        #        - 127.0.0.1
   defaultBackend:
     service:
       name: tssic-canary
